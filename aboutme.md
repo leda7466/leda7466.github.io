@@ -4,8 +4,7 @@ title: About me
 subtitle: 
 ---
 
-Daria Lebedeva
-
+**Daria Lebedeva**  
 MA Contemporary History and Media, University of Vienna 
 
-Contact me: a11847951@unet.univie.ac.at
+Contact me via [e-mail](a11847951@unet.univie.ac.at)
