@@ -1,0 +1,28 @@
+---
+layout: post
+title: Homework 08.1
+---
+
+#### Reformatting to TSV
+
+
+
+As our articles already have clear structure, we just need to change to change some lines in the previous code.
+1) In order to put all the issues into one file we make a new string named "dispatch" before the big loop with a line, that characterizes the new structure:
+```python
+dispatch = "".join("DATE \t TYPE \t HEADER \t TEXT")
+```
+2) Then inside the small loop we change the structure of the articles:
+```python
+ article = date + "\t" + "".join(typ) + "\t" + head_cleaned + "\t" + text_cleaned + "\n"
+```
+3) As we don't need gaps between the articles anymore, the part of the code with breaking the text after the small loop is to be removed with:
+```python
+dispatch = dispatch + "".join(final_list)
+```
+4) Finally, we move the saving lines outside of the big loop and change the name and extension of the final file:
+```python
+newfilename = target + "dispatch.tsv"
+with open(newfilename, "w", encoding="utf8") as f9:
+    f9.write(dispatch)
+```
